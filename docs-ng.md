@@ -362,10 +362,6 @@ However nice effects may be obtained (eg: with vector games). <br>
             scanline.
             While this does not exist at all in crt technology, it greatly mitigates the afromentioned
             artifacts, and produces a fairly convincing scanlined+slotmasked effect.
-        Slotmask(fake) width override (0=no override)
-            The previous effect staggers scanlines at "triad width interval", but here you can alter
-            that interval.
-            Setting an interval of 1.0 can be used to hide moire patterns.
         Dedot mask between scanlines
             When using Horizontal masks, you mai notice a disturbing dot pattern left between high
             scanlines, that's the residual of horizontal mask.

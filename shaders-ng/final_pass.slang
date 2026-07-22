@@ -271,11 +271,7 @@ void main() {
         vInteger_fragment_x = PG_OutputCoord_tated.x * PG_OutputSize_tated.x; //will be floored in fragment shader.
 
         //the following unfloored coords are needed by sin/cos later to understand if we are on an even or odd mask
-            float rgbw_size;
-            if (PIXELGRID_OFFSET_CORE * PIXELGRID_OFFSET_CORE_W > 0.0)
-                rgbw_size = 1/PIXELGRID_OFFSET_CORE_W;
-            else
-                rgbw_size = 1/vPG_offsets_and_size.a;
+            float rgbw_size = 1/vPG_offsets_and_size.a;
     
             vPG_freq_base_screen = pi * vec2(rgbw_size, 0.5) * (PG_OutputCoord_tated * PG_OutputSize_tated);
 
